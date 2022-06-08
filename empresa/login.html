@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/loginEmpresa.css">
+    
+    <link rel="icon" type="image/png" sizes="15x15" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "asfBZcBqQ3");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+    <script src="../js/empresa/loginEmpresa.js" defer type="module"></script>
+
+
+    <link rel="stylesheet" href="../css/utils/buttonAlert.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <title>Login</title>
+</head>
+<body>
+    <header>
+            <div class="container-logo">
+            <img class="logo-site" src="../img/logo.png">
+            </div>
+    </header>
+    <main>
+        <section class="area-login">
+            <div class="login">
+                <div>
+                    <h1>Login</h1>
+                    <h2>Seja bem-vindo ao nosso site!</h2>
+                </div>
+                <form>
+                    <div class="single-input">
+                        <input type="email" name="" id="email" class="input" >
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="single-input">
+                        <input type="password" name="" id="senha" class="input" >
+                        <label for="senha">Senha</label>
+                    </div>
+                    <a href="./esqueciSenha.html">Esqueci a Senha</a> 
+                <input  id="btnEntrar"  type="submit" value="Entrar">
+            </form>
+                <p>Ainda possui uma conta?</p>
+                <div class="possui-conta">
+                <a href="../empresa/cadastro.html">
+                    <input  id="btn-cadastrar"  type="button" value="Cadastrar">
+                </a>    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+        <!-- Modal Acessibilidade -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+</footer>
+</html>

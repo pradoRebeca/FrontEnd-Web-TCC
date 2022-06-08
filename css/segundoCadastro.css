@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/waves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: auto;
+    height: fit-content;
+}
+.container-logo{
+    width: 150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    margin:  auto;
+    margin-top:10px;
+}
+#container-titulo{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+} 
+h3{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+    font-family:'Poppins', sans-serif;
+
+}
+p{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+    font-family:'Roboto', sans-serif;
+
+}
+h1{
+    font-size:3rem;
+    color: #225E77;
+    font-family:'Roboto', sans-serif;
+}
+h2{
+    font-size:2rem;
+    color: #225E77;
+    font-family:'Roboto', sans-serif;
+}
+#desc-header{
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 2rem;
+} 
+.logo-site {
+    width: 160px;
+    height: 160px;
+    display: flex;
+}
+main{
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+}
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F5F5;
+    border-radius: 10px;
+    width: 500px;
+    height: fit-content;
+    padding: 35px;
+}
+.cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cadastro h4{
+    padding-top: 10px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+div.single-input{
+    width: 100%;
+    margin:20px 0;
+    position: relative;
+}
+div.single-input label{
+    font-size: 16px;
+    position : absolute;
+    left: 0;
+    bottom: 5px;
+    color: black;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+div.single-input .input{
+    width: 100%;
+    padding: 5px;
+    border: 0 ;
+    border-bottom: 2px solid rgb(000,000,000);
+    outline: 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+div.single-input .input:focus ~ label,
+div.single-input .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+}
+#btnCadastro{
+    height: 50px;
+    display: block;
+    background-color: #225E77;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius:5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#btn-entrar{
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #E7E7E7;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.possui-conta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

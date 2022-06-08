@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/verificacaoEmail.css">
+    <link rel="stylesheet" href="../css/utils/buttonAlert.css">
+    <link rel="icon" type="image/png" sizes="15x15" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../js/empresa/verificarCodigoSenha.js" defer type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Verificação de Email</title>
+</head>
+<body>
+    <header>
+            <div class="container-logo">
+            <img class="logo-site" src="../img/logo.png">
+            </div>
+            <div id="container-titulo">
+            <h1>PCD</h1>
+            <h2>Job</h2>
+            </div>
+    </header>
+    <main>
+        <section class="area-redef">
+            <div class="redefinicao">
+                <div>
+                    <h4>Verificação de E-mail</h4>
+                </div>
+                <form action="">
+                    <span id="texto">Enviamos um código de verificação para o email solicitado.
+                        Insira o código para realizar a verificação.</span>
+                        <div id="container-digitos">
+                            <input type="text" id="digito" maxlength="4">
+                            <!-- <input type="text" id="digito" maxlength="1">
+                            <input type="text" id="digito" maxlength="1">
+                            <input type="text" id="digito" maxlength="1"> -->
+                        </div>
+               <div id="btn-reenviar">     
+                <!-- <img id="img-voltar" src="../img/voltar.png">
+                <a>Enviar um novo Código</a> -->
+             </div>   
+             <div id="container-botao">
+                <input  id="btn-verificar" type="submit" value="Verificar">
+            </div>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>

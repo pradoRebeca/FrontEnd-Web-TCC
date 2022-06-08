@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="15x15" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "asfBZcBqQ3");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+    <link rel="stylesheet" href="../css/novaVaga.css">
+    <link rel="stylesheet" href="../css/campoObrigatorio.css">
+    <link rel="stylesheet" href="../css/utils/chat.css">
+    <link rel="stylesheet" href="../css/menuDrop.css">
+    <script src="../js/empresa/vagaEmpresa.js" defer type="module"></script>
+    <script src="../js/empresa/logout.js" defer></script>
+
+    <link rel="stylesheet" href="../css/utils/buttonAlert.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Nova Vaga</title>
+</head>
+<body>
+    <header>
+        <div class="conteinerSearch">
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="fotoPerfil">
+                <nav id="colorNav">
+                    <li class="red">
+                        <a href="#" class="fa fa-bars"></a>
+                        <ul>
+                            <li><a href="configuracaoPerfilEmpresa.html">Alterar Perfil</a></li>
+                            <li><a>Vagas</a></li>
+                            <li><a href="pesquisarCandidato.html">Pesquisar candidato</a></li>
+                      
+                            <li><a href="politicaAcessibilidade.html">Politica de Acessibilidade</a></li>
+                            <li id="logout"><a>Sair</a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <div class="conteinerTitulo">
+            <h1>Admistração das Vagas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="chat">
+
+        </div>
+        <div class="menuVagas">
+            <div class="menuItens">
+                <a href="../empresa/vagasInativas.html">Vagas Inativas</a>
+                <a href="../empresa/vagasAtivas.html">Vagas Ativas</a>
+                <a href="../empresa/vagasHistorico.html">Historico de Vagas</a>
+                <p>Nova vaga</p>
+            </div>
+        </div>
+        <div class="formVaga">
+          
+                <form action="">
+                    <div class="informacoesVaga">
+                        <div class="tituloImformacaoVaga">
+                            <h2>Informações sobre a vaga</h2>
+                        </div>
+                        <div class="inputs">
+                            <div class="tituloVaga">
+                                <p>Titulo da vaga <span class="campoObrigatorio">*</span></p>
+                                <input type="text" id="tituloVaga" required>
+                            </div>
+                            <div class="selects">
+                                <div  class="logradouro">
+                                    <p>Salario  <span class="campoObrigatorio">*</span></p>
+                                    <input type="text"  id="salarioVaga" value=""> 
+                                </div>
+                                <div class="deficiencia" >
+                                    <p>Visibilidade</p>
+                                    <select id="visibilidadeSalario">
+                                        <option value="1">Exibir</option>
+                                        <option value="0">Ocultar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="descricao">
+                                <p>Descrição</p>
+                                <textarea name="" id="descricaoVaga" cols="30" rows="10" maxlength="200"></textarea>
+                            </div>
+                            <div class="requisitos">
+                                <p>Requisitos</p>
+                                <textarea name="" id="requisitosVaga" cols="30" rows="10" maxlength="150"></textarea>
+                            </div>
+                        </div>
+                        <div class="selects">
+                            <div class="deficiencia">
+                                <p>Tipo de Deficiencia  <span class="campoObrigatorio">*</span></p>
+                                <select name="" id="selectTipoDeficiencia" >
+                                 
+                                </select>
+                            </div>
+                            <div  class="deficiencia">
+                                <p>Deficiencia  <span class="campoObrigatorio">*</span></p>
+                                <select name="" id="selectDeficiencia" disabled>
+                                  
+                                </select>
+                            </div>
+                            <div class="deficiencia">
+                                <p>Tipo de Contrato  <span class="campoObrigatorio">*</span></p>
+                                <select name="" id="selectTipoContrato"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="beneficios">
+                        <div class="tituloBeneficios">
+                            <h2>Beneficios  <span class="campoObrigatorio">*</span></h2>
+                        </div>
+                        <div class="checkboxBeneficios">
+                            <!-- <div class="checkbox">
+                                <input type="checkbox" id="beneficio1"> Beneficio
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="suporte">
+                        <div class="tituloSuporte">
+                            <h2>Suporte  <span class="campoObrigatorio">*</span></h2>
+                        </div>
+                     <div class="checkboxSuporte">
+                            <!-- <div class="checkbox">
+                                <input type="checkbox" id="suporte1" name="chksuporte"> Suporte
+                            </div> -->
+                        </div> 
+                    </div>
+                    <div class="formacao">
+                        <div class="tituloFormacao">
+                            <h2>Formação </h2>
+                        </div>
+                        <div class="grauFormacao">
+                            <p>Grau de formação <span class="campoObrigatorio">*</span></p>
+                            <select name="selectGrau" id="selectGrau">
+                                <option>ABC</option>
+                                <option>AGHHS</option>
+                            </select>
+                        </div>
+                        <div class="formacaoDesejada">
+                            <p>Formação desejada <span class="campoObrigatorio">*</span></p>
+                            <select name="idSelectCurso" id="selectCurso" disabled>
+                             
+                            </select>
+                        </div>
+                    </div>
+                    <div class="horario">
+                        <div class="tituloHorario">
+                            <h2>Horario</h2>
+                        </div>
+                        <div class="selects">
+                            <div class="inicioExpediente">
+                                <p>Inicio do expediente <span class="campoObrigatorio">*</span></p>
+                                <input id="horarioInicio" type="time">
+                            </div>
+                            <div class="fimExpediente">
+                                <p>Fim do expediente <span class="campoObrigatorio">*</span></p>
+                                <input id="horarioFim" type="time">
+                            </div>
+                            <div class="cargaHoraria">
+                                <p>Visibilidade</p>
+                                <select name="" id="visibilidade">
+                                    <option value="1">Exibir</option>
+                                    <option value="0">Ocultar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="localTrabalho">
+                        <div class="tituloLocalTrabalho">
+                            <h2>Local de Trabalho</h2>
+                        </div>
+                        <!-- <div class="formaTrabalho">
+                            <select name="" id=""></select>
+                        </div> -->
+                        <div class="endereco">
+                            <div class="CEP">
+                                <p>CEP <span class="campoObrigatorio">*</span></p>
+                                <input type="text" id="cep" maxlength="9">
+                            </div>
+                            <div class="logradouro">
+                                <p>Logradouro </p>
+                                <input type="text" id="logradouro" disabled>
+                            </div>
+                            <div class="numero">
+                                <p>Numero</p>
+                                <input type="text" id="numero" disabled >
+                            </div>
+                            <div class="CEP">
+                                <p>Bairro</p>
+                                <input type="text" id="bairro" disabled>
+                            </div>
+                            <div class="CEP">
+                                <p>Cidade <span class="campoObrigatorio">*</span></p>
+                                <input type="text" id="cidade" disabled>
+                            </div>
+                            <div class="CEP">
+                                <p>Estado <span class="campoObrigatorio">*</span></p>
+                                <input type="text" id="estado" maxlength="2" disabled>
+                            </div>
+                            <!-- <div class="complemento">
+                                <p>Complemento</p>
+                                <textarea name="" id="complemento" cols="30" rows="10"></textarea>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="btnSalvar">
+                        <button id='btnSalvarDados'>Salvar</button>
+                    </div>
+                </form>
+            
+        </div>
+    </main>
+    <footer>
+           <!-- Modal Acessibilidade -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <div class="direitos">
+            <p>
+                PCD Job  é um projeto estudantil e tem todos os direitos reservados ©2022
+            </p>
+        </div>
+        <div class="versao">
+            <p>
+                Versão:1.0
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

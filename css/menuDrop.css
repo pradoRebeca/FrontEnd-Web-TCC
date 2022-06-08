@@ -1,0 +1,114 @@
+
+a{
+	font-family: 'Poppins', sans-serif;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	/* color:#54a6de; */
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+section, nav{
+	display: block;
+}
+
+
+/*----------------------------
+	The Navigation Menu
+-----------------------------*/
+
+#colorNav > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:60px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+	
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:#1b4f64;
+}
+
+#colorNav li ul li a{
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+
+
+#colorNav li ul li:hover{
+	background-color:#297198;
+}
+
+#colorNav li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:20px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#1b4f64;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:400px; /* Increase when adding more dropdown items */
+}
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNav li.red{		
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-image: url("https://images.vexels.com/media/users/3/144883/isolated/preview/09a503901819e475a3c352ddd3e528b3-curso-de-construcao-de-empresa.png")  ;
+    position: absolute;
+ 	background-size: cover;
+}
+
+#colorNav li.red::marker{
+    color: #1E7596;
+}

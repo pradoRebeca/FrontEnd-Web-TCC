@@ -1,0 +1,15 @@
+.chat{
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    background-color: #59A4C7;
+    position: fixed;
+    display: none;
+    bottom: 10%;
+    left: 5%;
+    background-image: url(/img/chat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    cursor: pointer;
+}

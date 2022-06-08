@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: fit-content;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerSearch{
+    height: fit-content;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 8%;
+}
+
+.logo img{
+    width: 95px;
+    height: 95px;
+
+}
+
+.barraPesquisa{
+    height: 50px;
+    width: 15vw;
+    margin-left: 100px;
+    border-radius: 100px;
+    display: flex;
+    background: #FFFF;
+}
+
+.barraPesquisa input{
+    width: 82%;
+    border-radius: 100px;
+    border: none;
+    background: transparent; 
+    margin:5px;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.barraPesquisa img{
+    margin:5px auto;
+}
+
+.fotoPerfil{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 8%;
+}
+
+.conteinerTitulo{
+    height: 65px;
+    width: auto;
+    background-color: #DCEBF2;
+    display: flex;
+    align-items: center;
+}
+
+.conteinerTitulo h1{
+    font-size: 32px;
+    color: #2795D2;
+    margin-top: 8px;
+    margin-left: 12vw;
+}
+
+main{
+    width: auto;
+    padding-top: 75px;
+    padding-inline-start: 21%;
+    padding-inline-end: 21%;
+    width: auto;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+input{
+    padding: 10px;
+}
+
+.formPerfil{
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    margin-bottom: 145px;
+}
+
+.formPerfil .informacoesPessoais,.endereco,.formacaoAcademica,.experienciaProfissional,.informacoesAdicionais{
+    height: fit-content;
+    width: 55.5vw;
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.informacoesPessoais form,.endereco form,.formacaoAcademica form,.experienciaProfissional form,.informacoesAdicionais form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    width: 45vw;
+    margin-top: 45px;
+    margin-bottom: 75px;
+}
+
+.conteudoFormInformacoesPessoais{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudoFormInformacoesPessoais .informacoesTxt{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 45px;
+    column-gap: 45px;
+}
+
+.informacoesTxt .tipoDeficiencia,.deficiencia{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.tipoDeficiencia .checkboxTipoDefiencia{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 75px;
+}
+
+.informacoesTxt .checkbox{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.deficiencia .checkboxDefiencia{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 75px;
+}
+
+.nome,.nomeSocial,.email,.emailRecuperacao,.linkCurriculo,.genero,.dataNascimento,.telefone,.telefone2,.CEP,.logradouro,.numero,.cidade,.estado,.complemento,.nomeCurso,.nivel,.areaCurso,.empresa,.dataInicio,.dataSaida,.cargo,.descricaoCargo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.informacoesTxt .nome input,.nomeSocial input,.email input,.emailRecuperacao input,.linkCurriculo input{
+    width: 25vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.informacoesTxt .genero select,.dataNascimento input,.telefone input,.telefone2 input{
+    width: 11.5vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.informacoesArquivos{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoesArquivos .inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 125px;
+}
+
+.informacoesArquivos .carregarFoto input{
+    width: 200px;
+    height: 200px;
+    background-color: #F5F5F5;
+    background-image: url(../img/foto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.informacoesArquivos .carregarCurriculo input{
+    width: 200px;
+    height: 200px;
+    background-color: #F5F5F5;
+    background-image: url(../img/curriculo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.inputs .carregarFoto,.carregarCurriculo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 35px;
+}
+
+.inputs .txtCarregarFoto,.txtCarregarCurriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    background: #C6DCBB;
+    border-radius: 5px;
+}
+
+.informacoesPessoais button,.endereco button,.btnSalvar{
+    font-size: 1rem;
+    width: 15%;
+    height: 40px;
+    background: #225E77;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    align-self: flex-end;
+}
+
+.endereco .conteudoFormEndereco{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 45px;
+    flex-wrap: wrap;
+}
+
+.conteudoFormEndereco .CEP input{
+    width: 15vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormEndereco .logradouro input{
+    width: 25vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormEndereco .numero input{
+    width: 12vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormEndereco .cidade select{
+    width: 11vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormEndereco .estado select{
+    width: 14vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormEndereco .complemento input{
+    width: 43vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formacaoAcademica .conteudoFormacaoAcademica{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 45px;
+    flex-wrap: wrap;
+}
+.conteudoFormacaoAcademica .nomeCurso select{
+    width: 30vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormacaoAcademica .nivel select{
+    width: 12vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoFormacaoAcademica .areaCurso select{
+    width: 20vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.adicionarOuExcluir{
+    display: flex;
+    column-gap: 10%;
+}
+
+.adicionarOuExcluir img{
+    height: 35px;
+    width: 35px;
+}
+
+.adicionarOuExcluir button{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    column-gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: white;
+}
+
+.experienciaProfissional .conteudoExperienciaProfissional{
+    display: flex;
+    column-gap: 75px;
+    row-gap: 45px;
+    flex-wrap: wrap;
+}
+
+.conteudoExperienciaProfissional .empresa input{
+    width: 15vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoExperienciaProfissional .dataInicio input,.dataSaida input{
+    width: 12vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoExperienciaProfissional .cargo input{
+    width: 45vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.conteudoExperienciaProfissional .descricaoCargo textarea{
+    width: 45vw;
+    height: 90px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.informacoesAdicionais .conteudoinformacoesAdicionais{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.informacoesAdicionais .conteudoinformacoesAdicionais textarea{
+    width: 45vw;
+    height: 140px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+footer{
+    min-height: 70px;
+    height: 7vh;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+
+.versao{
+    position: absolute;
+    right: 5%;
+}
+
+@media (min-width:800px) and (max-width:1720px){
+
+    footer p{
+        font-size: 15px;
+    }
+}

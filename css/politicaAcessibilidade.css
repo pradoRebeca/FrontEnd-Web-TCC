@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerSearch{
+    height: 9vh;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 8%;
+}
+
+.logo img{
+    width: 95px;
+    height: 95px;
+
+}
+
+.barraPesquisa{
+    height: 50px;
+    width: 15vw;
+    margin-left: 100px;
+    border-radius: 100px;
+    display: flex;
+    background: #FFFF;
+}
+
+.barraPesquisa input{
+    width: 82%;
+    border-radius: 100px;
+    border: none;
+    background: transparent; 
+    margin:5px;
+}
+
+.barraPesquisa img{
+    margin:5px auto;
+}
+
+.fotoPerfil{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 8%;
+}
+
+.conteinerTitulo{
+    height: 65px;
+    width: auto;
+    background-color: #DCEBF2;
+    
+}
+
+.conteinerTitulo h1{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: #2795D2;
+    margin-top: 8px;
+    margin-left: 12vw;
+}
+
+main{
+    width: auto;
+    padding-top: 75px;
+    padding-inline-start: 21%;
+    padding-inline-end: 21%;
+    width: auto;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+footer{
+    min-height: 70px;
+    height: 7vh;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+
+
+.versao{
+    position: absolute;
+    right: 5%;
+}
+#tituloPolitica{
+    display: flex;
+    justify-content: center;
+}
+#container h2{
+    font-family: 'Poppins', sans-serif; 
+    align-content: center;
+    font-size: 2.5rem;
+    margin-bottom:40px;
+}
+#container h3{
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #225E77;
+    font-size:1.8rem;
+}
+#txtDireito{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+#txtDireitoFooter{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 5%;
+}
+
+@media (min-width:800px) and (max-width:1720px){
+
+    footer p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body{
+    height: fit-content;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerSearch{
+    height: fit-content;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 8%;
+}
+
+.logo img{
+    width: 95px;
+    height: 95px;
+
+}
+
+.barraPesquisa{
+    height: 50px;
+    width: 15vw;
+    margin-left: 100px;
+    border-radius: 100px;
+    display: flex;
+    background: #FFFF;
+}
+
+.barraPesquisa input{
+    width: 82%;
+    border-radius: 100px;
+    border: none;
+    background: transparent; 
+    margin:5px;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.barraPesquisa img{
+    margin:5px auto;
+}
+
+
+
+.fotoPerfil{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 8%;
+}
+
+.conteinerTitulo{
+    height: 65px;
+    width: auto;
+    background-color: #DCEBF2;
+    display: flex;
+    align-items: center;
+}
+
+.conteinerTitulo h1{
+    font-size: 32px;
+    color: #2795D2;
+    margin-top: 8px;
+    margin-left: 12vw;
+}
+
+main{
+    padding-bottom: 130px;
+    width: auto;
+    padding-top: 75px;
+    padding-inline-start: 21%;
+    padding-inline-end: 21%;
+    width: auto;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+input{
+    padding: 10px;
+}
+
+select{
+    padding-left: 10px;
+}
+
+.menuVagas{
+    height: 70px;
+    width: 55.5vw;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.menuVagas .menuItens{
+    background-color: #fefefe;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuVagas p{
+    font-size: 1.25rem;
+    color: #2795D2;
+}
+
+.menuVagas a{
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+}
+
+.formVaga{
+    height: fit-content;
+    width: 55.5vw;
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formVaga form{
+    width: 45vw;
+    margin-top: 45px;
+    margin-bottom: 75px;
+}
+
+.formVaga .informacoesVaga{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.formVaga .informacoesVaga .tituloImformacaoVaga{
+    color: black;
+    margin-bottom: 30px;
+}
+
+.formVaga .informacoesVaga .inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.selectExibir{
+    width: 5vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.inputs .tituloVaga input{
+    width: 45vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.inputs .descricao textarea{
+    width: 45vw;
+    height: 60px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.inputs .requisitos textarea{
+    width: 45vw;
+    height: 60px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formVaga .informacoesVaga .selects{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    margin-top: 35px;
+}
+
+.selects .deficiencia{
+    color: black;
+}
+
+.selects .deficiencia select{
+    width: 13.5vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.selects .tipoContrato select{
+    width: 12.5vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formVaga .beneficios{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 25px;
+}
+
+.formVaga .suporte{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 75px;
+}
+
+.checkboxBeneficios,.checkboxSuporte{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+.formVaga .checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.formVaga .formacao{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-bottom: 75px;
+}
+
+.formacao .grauFormacao select{
+    width: 15vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formacao .formacaoDesejada select{
+    width: 45vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formVaga .horario{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-bottom: 100px;
+}
+
+.horario .selects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.horario .selects select, .selects input{
+    width: 12vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formVaga .localTrabalho{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    margin-bottom: 75px;
+}
+
+.localTrabalho .formaTrabalho select{
+    width: 10vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.localTrabalho .endereco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.endereco .CEP input{
+    width: 14vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+ .logradouro input{
+    min-width: 27.5vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.endereco .numero input{
+    width: 10vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.endereco .cidade select{
+    width: 15vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.endereco .estado select{
+    width: 15vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.endereco .complemento textarea{
+    width: 45vw;
+    height: 60px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.formVaga .btnSalvar{
+    display: flex;
+    justify-content: right;
+}
+
+.btnSalvar button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #225E77;
+    border: none;
+    font-size: 1.2rem;
+}
+
+footer{
+    min-height: 70px;
+    height: 7vh;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+
+.versao{
+    position: absolute;
+    right: 5%;
+}
+
+@media (min-width:800px) and (max-width:1720px){
+
+    footer p{
+        font-size: 15px;
+    }
+}

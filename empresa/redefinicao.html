@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/redefinicao.css">
+    <link rel="stylesheet" href="../css/utils/buttonAlert.css">
+    <link rel="icon" type="image/png" sizes="15x15" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/empresa/redefinicao.js" defer type="module"></script>
+    <title>Redefinição</title>
+</head>
+<body>
+    <header>
+            <div class="container-logo">
+            <img class="logo-site" src="../img/logo.png">
+            </div>
+            <div id="container-titulo">
+            <h1>PCD</h1>
+            <h2>Job</h2>
+            </div>
+    </header>
+    <main>
+        <section class="area-redef">
+            <div class="redefinicao">
+                <div>
+                    <h4>Redefinição</h4>
+                </div>
+                <form action="">
+                    <p>     Após fazer a verificação do seu e-mail
+                        Insira uma nova senha para efetuar 
+                                            a renovação 
+                    
+                 </p>
+                    <div class="single-input">
+                        <input  type="password" name="" id="senha" class="input" required>
+                        <label for="nome">Insira sua nova senha:</label>
+                    </div>
+                    <div class="single-input">
+                        <input  type="password" name="" id="repeteSenha" class="input" required>
+                        <label for="nome">Digite a senha novamente:</label>
+                    </div>
+                <input  id="btnProx"  type="button"  value="Próximo">
+                <p>Já possui uma conta?</p>
+                <div class="possui-conta">
+                <input  id="btn-cancelar" type="submit" value="Cancelar">
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+  <!-- Modal Acessibilidade -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: fit-content;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerSearch{
+    height: fit-content;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 8%;
+}
+
+.logo img{
+    width: 95px;
+    height: 95px;
+
+}
+
+.barraPesquisa{
+    height: 50px;
+    width: 15vw;
+    margin-left: 100px;
+    border-radius: 100px;
+    display: flex;
+    background: #FFFF;
+}
+
+.barraPesquisa input{
+    width: 82%;
+    border-radius: 100px;
+    border: none;
+    background: transparent; 
+    margin:5px;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.barraPesquisa img{
+    margin:5px auto;
+}
+
+.fotoPerfil{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 8%;
+}
+
+.conteinerTitulo{
+    height: 65px;
+    width: auto;
+    background-color: #DCEBF2;
+    display: flex;
+    align-items: center;
+}
+
+.conteinerTitulo h1{
+    font-size: 32px;
+    color: #2795D2;
+    margin-top: 8px;
+    margin-left: 12vw;
+}
+
+main{
+    height: auto;
+    width: auto;
+    padding-top: 75px;
+    padding-inline-start: 21%;
+    padding-inline-end: 21%;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    flex-grow: 1;
+}
+
+.menuVagas{
+    height: fit-content;
+    width: 10vw;
+    background-color: #fefefe;
+    border-radius: 5px; 
+}
+
+.menuVagas .menu{
+    height: fit-content;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuVagas .menu .linha{
+    width: 8vw;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#vagaDispensada{
+    font-size: 1rem;
+}
+
+.menuVagas .menu p{
+    font-size: 1.25rem;
+    color: #2795D2;
+}
+
+.menuVagas .menu a{
+    font-size: 1.10rem;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vagasConteiner{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 45px;
+    gap: 45px;
+}
+
+.vagasConteiner .vagas{
+    height: fit-content;
+    width: 35vw;
+    background-color: #fefefe;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vagasConteiner .vagas .headerVagas{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerVagas .informacaoVaga{
+    display: flex;
+    flex-direction: row;
+}
+
+.headerVagas .imgEmpresa img{
+    width: 125px;
+    height: 125px;
+    margin-top: 35px;
+}
+
+.headerVagas .conteudoVaga{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.headerVagas .conteudoVaga .tituloVaga{
+    display: flex;
+}
+
+.headerVagas .conteudoVaga .tituloVaga h1{
+    margin-top: 25px;
+    font-size: 1.75rem;
+}
+
+.headerVagas .conteudoVaga .tituloVaga img{
+    margin-left: 15px;
+    margin-top: 30px;
+    height: 35px;
+    width: 35px;
+}
+
+.headerVagas .conteudoVaga .empresaVaga{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.headerVagas .conteudoVaga .empresaVaga img{
+    height: 25px;
+    width: 25px;
+}
+
+.vagasConteiner .vagas .footerVagas{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.vagasConteiner .vagas .footerVagas .tipoDeficiencia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #2795D2;
+    margin-top: 25px;
+    padding: 5px 20px 5px 20px;
+}
+
+.footerVagas .tipoDeficiencia h2{
+    font-size: 1.25rem;
+    color: white;
+}
+
+.footerVagas .botaoSaibaMais button{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #1E7596;
+    border: none;
+    margin-top: 25px;
+    padding: 10px 25px 10px 25px;
+}
+
+.botaoSaibaMais p{
+    font-size: 1.125rem;
+    color: white;
+}
+
+footer{
+    height: 7vh;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 1.563rem;
+    
+    color: #ffff;
+}
+
+.versao{
+    position: absolute;
+    right: 5%;
+}
+
+@media (min-width:800px) and (max-width:1720px){
+    main{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 75px;
+    }
+    .menuVagas{
+        width: 65%;
+    }
+    .vagasConteiner{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .headerVagas .conteudoVaga .tituloVaga h1{
+        font-size: 1rem;
+    }
+
+    .headerVagas .conteudoVaga .empresaVaga{
+        font-size: 0.75rem;
+    }
+
+    .footerVagas .tipoDeficiencia h2{
+        font-size: 1rem;
+    }
+
+    .footerVagas .botaoSaibaMais button{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-main:#2795D2;
+    --color-button-active:#1E7596;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 9vh;
+    background-color: #504d4d;
+}
+
+#containerModal{
+    width: 80%;
+    height: 1100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fefefe;
+    position: relative;
+}
+
+.usuarios{
+    width: 23%;
+    height: 100%;
+    background-color: #eeeeee;
+    border-radius: 15px 0px 0px 15px;
+    border-right: 2px solid rgb(156, 156, 156);
+}
+
+.conversa{
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conversa .perfil{
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid rgb(156, 156, 156);
+}
+
+.conversa .dialogo{
+    flex-grow: 1;
+}

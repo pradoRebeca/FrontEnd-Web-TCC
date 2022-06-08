@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/wave.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+main{
+    height: fit-content;
+    width: auto;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#logo-site{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#logo-site img{
+    width: 320px;
+}
+
+#tituloSite{
+    height: 100px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin:  auto;
+    margin-top:20px;
+
+}
+#tituloSite h1, #tituloSite h2{
+    color: #225E77;
+    font-size: 5rem;
+    align-items: center;
+    
+} 
+#tituloSite h2{
+    color: #225E77;
+    font-size: 4.5rem;
+    align-items: center;
+    
+} 
+#desc-Site{
+    height: fit-content;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    width: 50vw;
+    display:flex;
+    text-align: center;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+}
+
+.btnEmpresa, .btnCandidato{
+    height: 100px;
+    width: fit-content;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: #1E7596;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.btnEmpresa img, .btnCandidato img{
+    width:60px;
+    height:60px;
+}

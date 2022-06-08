@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/waves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: auto;
+    height: fit-content;
+}
+.container-logo img{
+    width: 150px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    margin:  auto;
+    margin-top:10px;
+}
+#container-titulo{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+} 
+h1{
+    font-size:3rem;
+    color: #225E77;
+    font-family:'Roboto', sans-serif;
+}
+h2{
+    font-size:2rem;
+    color: #225E77;
+    font-family:'Roboto', sans-serif;
+}
+
+main{
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form{
+    height: fit-content;
+    width: fit-content;
+    max-width: 500px;
+    background-color: #F7F5F5;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    border-radius: 5px;
+    margin-bottom: 7vh;
+}
+
+.titulo-site{
+    font-size: 2rem;
+}
+
+.logo-site img{
+    width: 175px;
+    height: 175px;
+}
+
+.botao-retornar input{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    height: 50px;
+    width:fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    background-color: #1E7596;
+    color: white;
+    border: none;
+}

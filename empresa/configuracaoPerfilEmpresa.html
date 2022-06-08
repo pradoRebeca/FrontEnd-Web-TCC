@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="15x15" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "asfBZcBqQ3");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+    <link rel="stylesheet" href="../css/configuracaoPerfilEmpresa.css">
+    <link rel="stylesheet" href="../css/menuDrop.css">
+    <script src="../js/empresa/perfilEmpresa.js" defer type="module"></script>
+    <script src="../js/empresa/logout.js" defer></script>
+    <link rel="stylesheet" href="../css/utils/buttonAlert.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../css/utils/chat.css">
+    <title>Configuração de Perfil</title>
+</head>
+<body>
+    <header>
+        <div class="conteinerSearch">
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="fotoPerfil">
+                <nav id="colorNav">
+                    <li class="red">
+                        <a href="#" class="fa fa-bars"></a>
+                        <ul>
+                            <li><a>Alterar Perfil</a></li>
+                            <li><a href="vagasHistorico.html">Vagas</a></li>
+                            <li><a href="pesquisarCandidato.html">Pesquisar candidato</a></li>
+                          
+                            <li><a href="politicaAcessibilidade.html">Politica de Acessibilidade</a></li>
+                            <li id="logout"><a>Sair</a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <div class="conteinerTitulo">
+            <h1>Alterar Perfil</h1>
+        </div>
+    </header>
+    <main>
+        <div class="chat">
+
+        </div>
+        <div class="formPerfil">
+            <form action="" id="formConteudo">
+                <div class="informacoesEmpresa">
+                    <div class="conteudoInfoEmpresa">
+                        <div class="tituloInformacoesEmpresa">
+                            <h2>Informações da Empresa</h2>
+                        </div>
+                        <div class="conteudoFormInformacoesEmpresa">
+                            <div class="informacoesTxt">
+                                <div class="nome">
+                                    <h3>Nome</h3>
+                                    <input type="text" id="nome">
+                                </div>
+                                <div class="email">
+                                    <h3>E-mail</h3>
+                                    <input type="email" id="email">
+                                </div>
+                                <div class="emailRecuperacao">
+                                    <h3>E-mail de Recuperação de Conta</h3>
+                                    <input type="email" id="emailRecuperacao">
+                                </div>
+                                <div class="telefone">
+                                    <h3>Telefone</h3>
+                                    <input type="text" id="telefone">
+                                </div>
+                                <div class="telefone2">
+                                    <h3>Telefone 2</h3>
+                                    <input type="text" id="telefone2">
+                                </div>
+                                <div class="areaAtuacao">
+                                    <h3>Area de Atuação</h3>
+                                    <select name="" id="areaAtuacao">
+                                      
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="informacoesArquivos">
+                                <div id="imgLogoContainer">
+                                    <img id="preview" src="https://icones.pro/wp-content/uploads/2021/02/icono-de-camara-gris.png">
+                                </div>
+                                       
+                               <div id='titulo-img' class='escolher-arquivo'>
+                                   <p >Escolher Logo</p>
+                               </div>
+                                <input id="img-input"  type="file" name="imagem"  accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="endereco">
+                    <div class="conteudoEndereco">
+                        <div class="tituloEndereco">
+                            <h2>Endereço</h2>
+                        </div>
+                        <div class="conteudoFormEndereco">
+                            <div class="CEP">
+                                <h3>CEP</h3>
+                                <input type="text" maxlength="50" id="cep">
+                            </div>
+                            <div class="logradouro">
+                                <h3>Logradouro</h3>
+                                <input type="text" maxlength="80" id="rua">
+                            </div>
+                            <div class="numero">
+                                <h3>Numero</h3>
+                                <input type="text" maxlength="30" id="numero">
+                            </div>
+                            <div class="cidade">
+                                <h3>Cidade</h3>
+                                <input type="text" id="cidade">
+                            </div>
+                            <div class="bairro">
+                                <h3>Bairro</h3>
+                                <input type="text" id="bairro">
+                            </div>
+                            <div class="estado">
+                                <h3>Estado</h3>
+                                <input type="text" id="estado">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="descricaoEmpresa">
+                    <div class="conteudoDescEmpresa">
+                        <div class="conteudoDescricaoEmpresa">
+                            <h2>Descrição da Empresa</h2>
+                            <textarea name="" id="descricao" cols="30" rows="10" maxlength="1000"></textarea>
+                        </div>
+                        <div class="adicionarOuExcluir">
+                            <div>
+                                <img src="../img/excluir.png" alt="">
+                                <p>Excluir Formação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="btnSalvar" type="submit" id="btnSalvar" value="Atualizar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="direitos">
+            <p>
+                PCD Job  é um projeto estudantil e tem todos os direitos reservados ©2022
+            </p>
+        </div>
+        <div class="versao">
+            <p>
+                Versão:1.0
+            </p>
+        </div>
+
+        <!-- Modal Acessibilidade -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,492 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: fit-content;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteinerSearch{
+    height: fit-content;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 8%;
+}
+
+.logo img{
+    width: 95px;
+    height: 95px;
+
+}
+
+.barraPesquisa{
+    height: 50px;
+    width: 15vw;
+    margin-left: 100px;
+    border-radius: 100px;
+    display: flex;
+    background: #FFFF;
+}
+
+.barraPesquisa input{
+    width: 82%;
+    border-radius: 100px;
+    border: none;
+    background: transparent; 
+    margin:5px;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.barraPesquisa img{
+    margin:5px auto;
+}
+
+.fotoPerfil{
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 8%;
+}
+
+.conteinerTitulo{
+    height: 65px;
+    width: auto;
+    background-color: #DCEBF2;
+    display: flex;
+    align-items: center;
+}
+
+.conteinerTitulo h1{
+    font-size: 32px;
+    color: #2795D2;
+    margin-top: 8px;
+    margin-left: 12vw;
+}
+
+main{
+    width: auto;
+    padding-top: 75px;
+    padding-inline-start: 21%;
+    padding-inline-end: 21%;
+    width: auto;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.sobreEmpresa{
+    width: 55.5vw;
+    height: fit-content;
+    background-color: #fefefe;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.informacoes{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgEmpresa img{
+    width: 125px;
+    height: 125px;
+    margin-top: 35px;
+}
+
+.conteudoVaga{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.conteudoVaga .tituloVaga{
+    display: flex;
+}
+
+.conteudoVaga .tituloVaga h1{
+    margin-top: 25px;
+    font-size: 32px;
+}
+
+.conteudoVaga .empresaVaga{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.conteudoVaga .empresaVaga img{
+    height: 25px;
+    width: 25px;
+}
+
+.sobreEmpresa .linha{
+    width: 90%;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.sobreEmpresa .sobre{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 45px;
+}
+
+.sobre h3{
+    font-size: 1.5rem;
+}
+
+.filtros{
+    height: fit-content;
+    width: 17vw;
+    background-color: #fefefe;
+    border-radius: 5px;
+}
+
+.filtros .tituloFiltros{
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.filtros .filtrosDeficiencia{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros .filtrosDeficiencia .tituloDeficiencia{
+    font-size: 1.25rem;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.filtros .filtrosDeficiencia .opcoesDeficiencia{
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.filtros .filtrosDeficiencia .opcoesDeficiencia .checkbox{
+    font-size: 1.125rem;
+    margin-top: 10px;
+    padding-right: 100px;
+}
+
+.filtros .filtrosRegiao{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtrosRegiao .tituloRegiao{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.filtrosRegiao .selectEstado{
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.filtrosRegiao .selectEstado select{
+    width: 5vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.filtrosRegiao .selectCidade{
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.filtrosRegiao .selectCidade select{
+    width: 10vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.filtrosSalario .tituloSalario{
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.filtrosSalario .radioSalario{
+    display: flex;
+    flex-direction: column;
+}
+
+.radioSalario .inputSalario{
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+.filtros .suporteOferecido{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.suporteOferecido .tituloSuporte{
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.suporteOferecido .selectSuporte{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.suporteOferecido .selectSuporte select{
+    width: 10vw;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.candidatosConteiner{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 45px;
+    gap: 45px;
+}
+
+.candidatosConteiner .candidatos{
+    height: fit-content;
+    width: 36vw;
+    background-color: #fefefe;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candidatos .headerCandidatos{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerCandidatos .informacaoCandidatos{
+    display: flex;
+    flex-direction: row;
+}
+
+ .headerCandidatos .imgEmpresa img{
+    width: 125px;
+    height: 125px;
+    margin-top: 35px;
+}
+
+ .headerCandidatos .conteudoCandidato{
+    display: flex;
+    flex-direction: column;
+}
+
+.candidatos .headerCandidatos .conteudoCandidato h1{
+    margin-top: 25px;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudoCandidato .localCandidato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.conteudoCandidato .localCandidato img{
+    height: 25px;
+    width: 25px;
+}
+
+.candidatos .footerCandidatos{
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.candidatos .tipoDeficiencia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #2795D2;
+    margin-top: 4%;
+}
+
+.candidatos .tipoDeficiencia h2{
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footerCandidatos .botaoSaibaMais button{
+    font-size: 1.125rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #1E7596;
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+
+.botaoSaibaMais p{
+    padding: 5px;
+}
+
+footer{
+    min-height: 70px;
+    height: 7vh;
+    width: auto;
+    background-color: #1E7596;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+}
+
+.versao{
+    position: absolute;
+    right: 5%;
+}
+
+
+@media (min-width:800px) and (max-width:1800px){
+    main{
+        align-items: center;
+        flex-direction: column;
+        row-gap: 35px;
+    }
+
+    .filtros{
+        width: 52vw;
+        margin-bottom: 25px;
+    }
+
+    .filtros .filtrosDeficiencia .opcoesDeficiencia{
+        height: auto;
+        flex-direction: row;
+    }
+
+    .filtrosRegiao .selectEstado select{
+        width: 20vw;
+    }
+
+    .filtrosRegiao .selectCidade select{
+        width: 25vw;
+    }
+
+    .filtrosSalario .radioSalario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .suporteOferecido .selectSuporte select{
+        width: 30vw;
+    }
+
+    .candidatosConteiner{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 45px;
+        gap: 45px;
+    }
+    
+    .candidatosConteiner .candidatos{
+        height: fit-content;
+        width: 50vw;
+    }
+
+    .candidatos .headerCandidatos{
+        width: 40vw;
+
+    }
+
+    .candidatos .tipoDeficiencia{
+        margin-top: 6%;
+    }
+
+    .candidatos .tipoDeficiencia h2{
+        font-size: 1rem;
+    }
+
+    .candidatos .footerCandidatos{
+        width: 40vw;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="15x15" href="../img/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "asfBZcBqQ3");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
+    <link rel="stylesheet" href="../css/vagasAtivas.css">
+    <link rel="stylesheet" href="../css/modalVaga.css">
+    <link rel="stylesheet" href="../css/utils/notFound.css">
+    <link rel="stylesheet" href="../css/utils/chat.css">
+    <link rel="stylesheet" href="../css/menuDrop.css">
+    <script src="../js/empresa/vagasAtivas.js" defer type="module"></script>
+    <script src="../js/empresa/modalEditarDeletarVaga.js" defer></script>
+    <script src="../js/empresa/logout.js" defer></script>
+    <link rel="stylesheet" href="../css/utils/buttonAlert.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="../css/modalVaga.css"  rel="stylesheet">
+    <link rel="stylesheet" href="../css/utils/chat.css">
+    <title>Vagas Ativas</title>
+</head>
+<body>
+    <section id='containerModal'>
+        <div id="bodyModal" >
+       </div>
+     </section>
+    <header>
+        <div class="conteinerSearch">
+            <div class="logo">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="fotoPerfil">
+                <nav id="colorNav">
+                    <li class="red">
+                        <a href="#" class="fa fa-bars"></a>
+                        <ul>
+                            <li><a href="configuracaoPerfilEmpresa.html">Alterar Perfil</a></li>
+                            <li><a>Vagas</a></li>
+                            <li><a href="pesquisarCandidato.html">Pesquisar candidato</a></li>
+                      
+                            <li><a href="politicaAcessibilidade.html">Politica de Acessibilidade</a></li>
+                            <li id="logout"><a>Sair</a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+        </div>
+        <div class="conteinerTitulo">
+            <h1>Admistração das Vagas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="chat">
+
+        </div>
+        <div class="menuVagas">
+            <div class="menuItens">
+                <a href="../empresa/vagasInativas.html">Vagas Inativas</a>
+                <p>Vagas Ativas</p>
+                <a href="../empresa/vagasHistorico.html">Historico de Vagas</a>
+                <a href="../empresa/novaVaga.html">Nova vaga</a>
+            </div>
+        </div>
+            <div class="filtros">
+                <div class="tituloFiltros">
+                    <h2>Filtros</h2>
+                </div>
+                <div class="filtrosDeficiencia">
+                    <div class="tituloDeficiencia">
+                        <h3>Deficiencia</h3>
+                    </div>
+                    <div class="opcoesDeficiencia" id="opcoesDeficiencia">
+                        <!-- <div class="rdoDeficiencia" id="rdoDeficiencia">
+                            <input type="radio" id="checkbox1"> Visual
+                        </div> -->
+                        <!-- <div class="checkbox">
+                          
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox3"> Auditiva
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox4"> Motora
+                        </div> -->
+                    </div>
+                </div>
+                <div class="filtrosRegiao">
+                    <div class="tituloRegiao">
+                        <h3>Região</h3>
+                    </div>
+                    <div class="selectEstado">
+                        <p>Estado</p>
+                        <select name="" id="slcEstado"></select>
+                    </div>
+                    <div class="selectCidade">
+                        <p>Cidade</p>
+                        <select name="" id="slcCidade" ></select>
+                    </div>
+                </div>
+                <div class="nivelAcademico">
+                    <div class="tituloNivelAcademico">
+                        <h3>Suporte Desejado</h3>
+                    </div>
+                    <div class="selectNivelAcademico">
+                        <select name="" id="slcSuporte"></select>
+                    </div>
+                </div>
+                <div class="botaoAplicar">
+                    <button id="btnAplicar">Aplicar</button>
+                </div>
+            </div>
+            <div class="candidatosConteiner">
+            
+            </div>
+    </main>
+    <footer>
+          <!-- Modal Acessibilidade -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+        <div class="direitos">
+            <p>
+                PCD Job  é um projeto estudantil e tem todos os direitos reservados ©2022
+            </p>
+        </div>
+        <div class="versao">
+            <p>
+                Versão:1.0
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
